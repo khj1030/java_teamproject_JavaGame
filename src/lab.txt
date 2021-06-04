@@ -1,0 +1,474 @@
+주어진 코드를 보고 서식 문자에 맞게 인자를 수정하시오.
+public class week2 {
+
+    public static void main(String[] args) {
+		
+       String aString = "abcde";
+       int IntNum = 1234567890;
+       double DoubleNum = 12345.6789;
+		
+       System.out.printf("%f", DoubleNum);
+       System.out.printf("%d", aString);
+       System.out.printf("%s", aString);
+    } 
+}
+#
+System.out.printf("%d", aString);
+System.out.printf("%d", IntNum);
+주어진 코드를 수정하시오.
+public class week2 {
+
+    public static void main(String[] args) {
+    
+       String greeting = "Hello";
+		
+       System.out.println(greeting.equal("Hello"));
+    }
+}
+#
+System.out.println(greeting.equal("Hello"));
+System.out.println(greeting.equals("Hello"));
+다음의 결과가 Yes가 될 수 있도록 코드를 수정하시오. (단, str1, str2는 건드리지 말 것)
+public static void main(String[] args) {
+
+   String str1 = "javaprogramming";
+   String str2 = "JAVAprogramming";
+	
+   if (str1.equals(str2))
+        System.out.println("Yes");
+   else
+        System.out.println("No");
+}
+#
+if (str1.equals(str2))
+if (str1.equalsIgnoreCase(str2))
+다음 코드의 결과가 항상 Negative가 되도록 코드를 수정하시오.
+public class week3 {
+
+    public static void main(String[] args) {
+
+      final int SEED = 10;
+      Random randomNumGenerator = new Random(SEED);
+      int randNum = randomNumGenerator.nextInt(SEED);
+		
+      if (randNum > 0)
+          System.out.println("Positive");	
+      else 
+          System.out.println("Negative");
+      }
+}
+#
+int randNum = randomNumGenerator.nextInt(SEED);
+int randNum = randomNumGenerator.nextInt(SEED) – 10;
+“JavaProgrammin”이 6번 출력되도록 다음 코드를 수정하시오.(단, idx와 testNum을 반드시 사용)
+public class week3 {
+	
+    public static void main(String[] args) {
+        int testNum = 5;
+        int idx = 0;
+		
+        while (idx++ < testNum)
+            System.out.println("JavaProgramming");		
+    }
+}
+#
+while (idx++ < testNum)
+for(int i=idx; i<=testNum; i++)
+다음 코드를 정보의 혼란을 막을 수 있도록 수정하시오.
+public class week1 {
+    private int month;
+	
+    public void setDate(int month) {
+        month = month;
+    }
+}
+#
+month = month;
+this.month = month;
+다음 코드를 수정하시오.
+public class week1 {
+    public String month;
+    public int day;
+    public int year;
+	
+    public boolean same (Date otherDate) {
+        return ((this.month == otherDate.month)
+                && (this.day == otherDate.day)
+                && (this.year == otherDate.year));
+    }
+}
+#
+return ((this.month == otherDate.month)
+month.equals(otherDate.month)
+다음 코드의 15~18줄을 한 줄로 표현하시오. (오답을 입력하는 칸(위쪽)에는 큰따옴표 두 개를 입력)
+public class week3 {
+	
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+
+        int num1, num2;
+
+        System.out.print("Please input num1: ");
+        num1 = keyboard.nextInt();
+        System.out.print("Please input num2: ");
+        num2 = keyboard.nextInt();
+
+        if (num1 >= num2)
+            System.out.println("num1 is bigger than num2");
+        else
+            System.out.println("num2 is smaller than num2");
+		
+        keyboard.close();
+    }
+}
+#
+""
+System.out.println(num1 > num2 ? num1 : num2 + " is bigger");
+아래 코드에서 발생할 수 있는 에러를 제거하기 위해 코드를 수정하라
+public class Person {
+    private String name;
+    private Date born;
+    private Date died;
+    ...
+    public boolean equalsBorn(Date aDate) {
+        return (this.born.equals(aDate));
+    }
+
+    public boolean equalsDied(Date aDate) {
+        return (this.born.equals(aDate));
+    }
+
+    public static boolean datesMatch(Date bornDate, Date diedDate) {
+        return (this.equalsBorn(bornDate) && this.equalsDied(diedDate));
+    }
+}
+#
+public static boolean datesMatch
+public Boolean datesMatch
+아래의 코드에서 에러가 발생하는 부분을 수정하시오. (method의 signature은 그대로 둘 것)
+public class TurnTaker {
+    private static int turn = 0;
+
+    private int myTurn;
+    private String name;
+    ...
+    public String getName() {return this.name;}
+
+    public static int getTurn() {return (++this.turn);}
+
+    public boolean isMyTurn() {return (this.myTurn == this.turn);}
+
+    public static void main(String[] args) {
+        TurnTaker lover1 = new TurnTaker("Romeo", 2);
+        TurnTaker lover2 = new TurnTaker("Juliet", 4);
+        TurnTaker writer = new TurnTaker("Shakespeare", 7);
+        for(int i=1; i<=7; i++) {
+            System.out.println("Turn = "+TurnTaker.getTurn());
+            if(lover1.isMyTurn())
+                System.out.println("Love from "+lover1.getName());
+            if(lover2.isMyTurn())
+                System.out.println("Love from "+lover2.getName());
+            if(writer.isMyTurn())
+                System.out.println("Written by "+writer.getName());	
+        }
+    }
+}
+#
+this.turn
+turn
+복사 생성자를 이용하여 아래 빈칸을 채우시오. (오답을 입력하는 칸(위쪽)에는 큰따옴표 두 개를 입력)
+public class PersonDemo {
+    public static void main(String[] args) {
+        Person bach = new Person("Johann Sebastian Bach",
+                                new Date("March", 21, 1685),
+                                new Date("July", 28, 1750));
+        Person stravinsky = new Person("Igor Stravinsky",
+                                new Date("June", 17, 1882),
+                                new Date("April", 6, 1971));
+        Person adams = new Person("John Adams",
+                                new Date("February",15,1947),
+                                null);
+        Person bachTwin;
+        bachTwin = ________________;
+        if(bachTwin == bach) {
+            System.out.println("Same reference for both.");
+        }else {
+            System.out.println("Distinct copies.");
+        }
+        if(bachTwin.equals(bach)) {
+            System.out.println("Same data");
+        }else {
+            System.out.println("Not same data.");
+        }
+    }
+}
+#
+""
+new Person(bach);
+아래 코드의 출력 결과를 쓰시오. (오답을 입력하는 칸(위쪽)에는 큰따옴표 두 개를 입력)
+public class Person {
+    private String name;
+    private Date born;
+    private Date died;
+    ...
+    public String toString() {
+        if(this.died == null) {
+            return this.name+", "+(this.born).toString()+"-";
+        }else {
+            return this.name+", "
+                    +(this.born).toString()+" "+(this.died).toString();
+        }
+    }
+}
+public class Date {
+    private String month;
+    private int day;
+    private int year;
+    ...
+    public String toString() {
+        return (month+" "+day+", "+year);
+    }
+}
+public class PersonDemo {
+    public static void main(String[] args) {
+    Person bach = new Person("Johann Sebastian Bach",
+                             new Date("March", 21, 1685),
+                             new Date("July", 28, 1750));
+    System.out.println(bach);
+    }
+}
+#
+""
+Johann Sebastian Bach, March 21, 1685-July 28, 1750
+아래의 코드에서 에러가 발생하는 부분을 수정하시오.
+public class EnumDemo{
+    enum WorkDay {MONDAY, TUESDAY, WENDESDAY, THURSDAY, FRIDAY};
+    public static void main(String[] args) {
+        WorkDay starDay = WorkDay.MONDAY;
+        ...
+        String meetingDay = WorkDay.THURSDAY;
+    }
+}
+#
+String
+WorkDay
+아래의 코드에서 에러가 발생하는 부분을 수정하시오.
+public class GolfScores {
+    static ArrayList<int> score = new ArrayList<int>();
+
+    public static void main(String[] args) {
+        System.out.println("This program reads golf scores");	
+        System.out.println("Eneter golf scores:");
+        fillArrayList();
+    }
+    private static void fillArrayList() {
+        System.out.println("Enter a list of nonnegative numbers.");
+        System.out.println("Mark the end of list with a negative number.");	
+        Scanner keyboard = new Scanner(System.in);	
+        while(true) {
+            int inputNum = keyboard.nextInt();
+            if(inputNum < 0) break;
+            score.add(inputNum);
+        }
+        keyboard.close();
+    }
+}
+#
+int
+Integer
+아래의 코드에서 잘못된 부분을 수정하시오.
+import java.util.Scanner;
+class UtilityClass {
+    public static int max(String[] arg) {
+        if(arg.length == 0) {
+            System.out.println("Fate error");
+            System.exit(0);
+        }
+        int largest = arg[0];
+        for(int i=1; i<arg.length; i++) {
+        if(arg[i] > largest)
+            largest = arg[i];
+        }
+        return largest;
+    }
+}
+public class HighestScore {
+    public static void main(String[] args) {
+        System.out.println("Enter scores for Tom, Dick, and Harriet:");
+        Scanner keyboard = new Scanner(System.in);
+
+        int tomScore = keyboard.nextInt();
+        int dickScore = keyboard.nextInt();
+        int harrietScore = keyboard.nextInt();
+        int highestScore 
+                = UtilityClass.max(tomScore, dickScore, harrietScore);
+        System.out.println("Highest score = " + highestScore);
+        keyboard.close();
+    }
+}
+#
+String[] arg
+int... arg
+주어진 코드의 실행 결과를 작성하시오. (오답을 입력하는 칸(위쪽)에는 큰따옴표 두 개를 입력)
+public class Sale {
+
+    public static void announcement() {
+        System.out.println("This is the Sale class.");
+    }
+
+    public void showAdvertisement() {
+        announcement();
+    }
+}
+
+public class DiscountSale extends Sale {
+
+    public static void announcement() {
+        System.out.println("This is the DiscountSale class.");
+    }
+}
+
+Sale s = new Sale();
+DiscountSale discount = new DiscountSale();
+s.showAdvertisement();
+discount.showAdvertisement();
+#
+""
+This is the Sale class.
+주어진 코드 중 잘못된 줄을 수정하시오.
+public interface Product {   
+    void printDetailedInfo();
+    void printPrice();
+}
+
+public class Property extends Product {
+    private double price;
+    private String propertyType;
+
+    @Override
+    public void printDetailedInfo() {
+        System.out.println("Choose a property type (apartment | house): ");
+    }
+
+    @Override
+    public void printPrice() {
+        if (!this.propertyType.equals("none")) {
+            DecimalFormat formatter = new DecimalFormant("#,###,###");
+            System.out.println("property, Detailed info: "
+                                  + this.propertyType
+                                  + " property, Price: $"
+                                  + formatter.format(this.price) + ".");
+        }
+    }
+}
+#
+public class Property extends Product {
+public class Property implements Product {
+주어진 코드 중 잘못된 줄을 수정하시오.
+public abstract class Property implements Product {
+    ...
+    @Override
+    public void printDetailedInfo() {
+        System.out.println("Choose a property type (apartment | hose): ");
+    }
+
+    @Override
+    public void printPrice();
+}
+#
+public void printPrice();
+public abstract void printPrice();
+goodCopy를 해내기 위해 빈칸에 알맞은 코드를 작성하시오. (오답을 입력하는 칸(위쪽)에는 큰따옴표 두 개를 입력)
+public class CopyingDemo {
+
+    public static Sale[] badCopy(Sale[] a) {
+        Sale[] b = new Sale[a.length];
+        for (int i = 0; i < a.length; i++)
+            b[i] = new Sale(a[i]);
+        return b;
+    }
+
+    public static Sale[] goodCopy(Sale[] a) {
+        Sale[] b = null;
+
+        for (int i = 0; i < a.length; i++)
+            //write the correct code.
+        return b;
+    }
+
+    public static void main(String[] args) {
+        Sale[] a = new Sale[2];
+        a[0] = new Sale("atomic coffee mug", 130.00);
+        a[1] = new DiscountSale("invisible paint", 5.00, 10);
+    
+        b = goodCopy(a);
+        System.out.println("With clone method: ");
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("a[" + i + "] = " + a[i]);
+            System.out.println("b[" + i + "] = " + b[i] + "\n");
+        }
+        System.out.println();
+    }
+}
+#
+""
+b = a.clone();
+내림차순 정렬을 하도록 코드를 수정하시오.
+(단, main함수에서는 GeneralizedSelectionSort.sort(비교할 배열, 배열의 크기)를 호출한다.)
+public class GeneralizedSelectionSort {
+    public static void sort(Comparable[] a, int numberUsed) {
+        for (int i = 0; i < numberUsed; i++) {
+            int minIdx = findTargetIdx(i, a, numberUsed);
+            swap(i, minIdx, a);
+        }
+    }
+
+    private static int findTargetIdx(int startIdx, Comparable[] a, int numberUsed) {
+        int targetIdx = startIdx;
+        Comparable = startObj = a[startIdx];
+        for (int i = startIdx + 1; i < numberUsed; i++) {
+            if (a[i].compareTo(startObj) < 0) {
+                startObj = a[i];
+                targetIdx = i;
+            }
+        }
+        return targetIdx;
+    }
+    
+    private static void swap(int i, int j, Comparable[] a) {
+        Comparable temp;
+        temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
+}
+#
+if (a[i].compareTo(startObj) < 0) {
+if (a[i].compareTo(startObj) > 0) {
+주어진 코드 중 잘못된 줄을 수정하시오.
+public abstract class Employee2 {
+    private String name;
+    private Date hireDate;
+    . . .
+    public abstract double getPay();
+}
+
+public class HourlyEmployee2 extends Employee2 {
+    private double wageRate;
+    private double hours;
+    . . .
+    public double getPay() {
+        return wageRate * hours;
+    }
+}
+
+public class AbstractClassDemo {
+    public static void main(String[] args) {
+        Employee2 joe = new Employee2();
+        . . .
+        System.out.println("Monthly Income: $" + joe.getPay());
+    }
+}
+#
+Employee2 joe = new Employee2();
+HourlyEmployee2 joe = new HourlyEmployee2();

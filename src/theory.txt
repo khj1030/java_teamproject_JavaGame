@@ -1,0 +1,222 @@
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Java is one of the most popular programming languages.
+true
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Java has procedural language.
+false
+아래의 문장은 어떤 단어에 대한 정의이다. 정의에 해당하는 단어를 쓰시오.
+고수준 언어를 저수준 언어로 바꾸는 과정.
+Compiling
+다음 문제를 읽고, 알맞은 답을 쓰시오.
+"Welcome to Java."를 출력하는 method를 작성하시오.
+System.out.println("Welcome to Java.");
+java program을 compile 하기 위해서는 어떤 command를 작성해야 하는가.
+javac, java, Interpreter
+javac
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+Simple output to the screen and input from the keyboard.
+console or console I/O
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+General floating-point, Java will decide whether to use E-notation.
+g
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+libraries in Java, A collection of classes.
+Package
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+Contains classes that are “fundamental” to Java programming. These classes are so “basic” that the package is always imported automatically.
+Java.lang
+다음 문제를 읽고, 알맞은 답을 쓰시오.
+Scanner class의 method인 nextLine()의 escape sequence는?
+useDelimiter()
+다음 문제를 읽고, 알맞은 답을 쓰시오.
+Scanner class중 키보드 입력을 위한 구분자를 변경하는 method는?
+g
+다음 문제를 읽고, 알맞은 답을 쓰시오.
+텍스트 파일을 읽기 위해 파일 처리 관련 클래스를 import해야 하는 데 그때 쓰이는 class의 종류를 쓰시오.
+FileInputstream, FileNotFoundException
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+used for formatted console output
+System.out.printf()
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+You should normally print out whatever you received from keyboard input
+echo input
+다음 문제를 읽고, 알맞은 답을 쓰시오.
+if-else문에서 중괄호를 사용하여 여러문을 수행시킬 수 있는데 이 여러문을 무엇이라고 하는가?
+복합문 or compound statement
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+the association of operands with operators
+Binding
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+표현식 평가 방법은 선행, 결합 규칙으로 완전 괄호식을 결정한 수 왼쪽에서 오른쪽으로 부표현식을 평가하고 모든 피연산자가 평가되자마자 각 외부 연산/메소드를 호출하여 평가한다.
+true 
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+while문은 반드시 실행을 한 번 한다.
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+for(number=1;number>0;number++);은 무한루프를 돈다.
+true
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+강의자료에 나와있는 debugging tip 중 Make random changes in your code.에 대한 내용이 존재하는가?
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Math class에 있는 random() method는 pseudo-random이기 때문에 seed만 알면 어떤 숫자로 출력했는지 알 수 있다.
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+자바는 모든 프로그램이 클래스이며, 모든 조력 소프트웨어, 프로그래머 정의 타입도 역시 클래스이다. 한마디로 자바는 클래스들로 구성된 세상을 구현해 내는 것이다.
+true 
+빈칸에 들어갈 말로 알맞은 말을 쓰시오.
+(    )are the most important language feature that facilitates object-oriented programming.
+class or 클래스
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+데이터 타입과 객체가 수행할 수 있는 action으로 정의하는 것을 원시형이라고 하며 클래스는 단일 데이터로 구성되어 있다.
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Date date1=new Date(); Date date2=new Date();일 때, date1과 date2의 method는 같으나 내부 동작 과정이 달라서 정보는 다르다.
+true
+다음 문제를 읽고, 알맞은 답을 쓰시오.
+새로운 객체를 생성할 때 사용되는 연산자는 무엇인가?
+new
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+There are no restrictions on how instance variables are used.
+public
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+java program은 main method를 갖는 간단한 class이며, 타 클래스에서 호출 가능한 인자는 갖는 유일한 클래스 함수이다.
+true
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+호출하는 객체를 위한 명시적 이름이 필요한 경우, 자기 자신의 객체 또는 클래스를 의미하거나 같은 이름을 갖는 파라미터나 다른 지역 변수가 메소드에 사용될 때 구별을 위해 사용하는 parameter.
+this
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+The practice of separating the description of how to use a class from the implementation details, such as how the class methods are defined.
+information hiding
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+Means two or more methods in the same class have the same method name.
+overloading
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+자바는 한 개의 생성자를 클래스 정의에 이미 포함시켰다면 기본 생성자는 제공되지 않는다.
+true
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+호출 객체 없이 사용될 수 있는 메소드, 클래스에 속해 있으면서 개별 객체에 속해 있지 않고, 그 클래스 전체에 대해 속해 있는 것, 전체 객체를 대변하는 클래스 이름으로 바로 부를 수 있는 메소드.
+static method
+빈칸에 들어갈 말로 알맞은 말을 쓰시오.
+static method does not need a calling object and thus it cannot refer to an instance variable of the class, cannot invoke any non-static method of the class, only a static method can invoke, and has no ____.
+this
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+static variable은 non-static method에 접근이 불가능 하다.
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Math class has all its methods and data are static.
+true
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Wrapper class는 각 원시형에 대한 클래스 타입을 제공하기 때문에 좀 더 효율적으로 사용될 수 있어서 단점이 없는 클래스이다.
+false
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+The process of converting from an object of its wrapper class to a value of primitive type
+Unboxing
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Secondary memory의 종류는 HDD, RAM, SSD, NVRAM이 있다.
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+자바에서는 call by reference만이 사용된다.
+false
+빈칸에 들어갈 말로 알맞은 말을 쓰시오.
+____는 특수한 상수로서 어떤 클래스 형에도 할당이 가능하다.
+null
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+A class that contains no methods (other than constructors) that change any of the data in an object of the class.
+Immutable class
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+new 연산자는 C언어에서 malloc하는 것과 역할이 비슷하다.
+true
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+char[] a={'A',' ','B','i','g',' ','H','i','!'}; String s=a;
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Date[] holidayList=new Date[20];만 하면 Date에 대한 Array가 생성된다.
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Array는 Parameter이나 return type으로 사용될 수 있다.
+true
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+A simple type consisting of a short list of named constants.
+Enumerated Type
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Enumerated Type일 때, switch문에서 default의 경우는 case에 없는 다른 모든 경우의 수를 다 포함한다.
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+ArrayList는 메모리를 많이 차지해 비싸기 때문에 Array보다 덜 효율적이다.
+true
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Collection의 경우에만 for-each loop를 허용한다. 예를 들어 Array가 있다.
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+vector인 경우에는 ArrayList보다 늦게 만들어졌기 때문에 method들이 synchronized하지 않아 thread-safe하지 않다.
+false
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+The process by which a new class, called a defived class is created from another class, called a base class.
+inheritance
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+상속을 하는 이유는 코드의 재사용성, 즉 코드를 중복적으로 짜지 않아도 되기 때문이다.
+true
+아래의 문제를 읽고 답하시오.
+redefining in a derived class a method inherited from its base class while keeping the same method signature인 특징을 가진 method는?
+overriding
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+특수한 케이스로 overriding할 때 상속 관계인 경우 타입이 같기 때문에 method의 return type을 변경할 수 있다. 하지만, 반대는 불가능하다.
+true
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+Used to initialize in a derived class all the data inherited from the base class.
+super constructor
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+모든 class는 object class를 포함해서 모두 3개 이다.
+false
+아래의 문제를 읽고 답하시오.
+private같은 경우에는 자신의 클래스 내에서만 접근이 가능하기 때문에 상속될 경우 subclass에서는 접근이 불가능하다. 이를 보완하기 위해 private 대신 쓰는 modifier는?
+protected
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+another way to make a more complex class out of a simpler class.
+has-a relationship
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+getClass와 instanceOf method는 둘 다 두개의 객체가 동일 클래스로부터 생성된 것인지 검사한다.
+true
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+A class that has some methods with no full definitions
+abstract class
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+abstract class 같은 경우에는 abstract method와 regular method 전부 표현이 가능하고 생성자를 이용해 객체 생성이 가능하다.
+true
+아래의 문제를 읽고 답하시오.
+OOP를 구성하는 3가지 주요한 프로그래밍 메커니즘을 쓰시오. ('__, __, __'의 양식, 영어로 작성)
+Encapsulation, Inheritance, Polymorphism
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+method나 class에 final를 사용한다면 파생클래스에 재정의될 수 없다.
+true
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+assigning an object of a base class to a variable of a derived class; always legal.
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+clone method에 복사 생성자를 사용하는 것을 추천하지 않는데 그 이유는 static하기 때문이다.
+true
+아래의 문장은 어떤 단어에 대한 정의이다. 그 단어를 쓰시오.
+the decision of which version of a method is appropriate is decided at run time.
+late binding
+빈칸에 들어갈 말로 알맞은 말을 쓰시오.
+An _________ is a property of a class that says what methods a class that implements the _________ must have.
+interface
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+interface는 공통의 메소드 헤딩 집합에 대한 메소드 정의를 모두 포함하는 다수의 서로 다른 클래스는 그룹화한 클래스이다.
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+자바는 클래스에 의한 다중 상속은 지원하지 않지만, 인터페이스를 통해 다중 인터페이스를 가질 수 있다.
+true
+아래의 문제를 읽고 답하시오.
+comparable Interface의 의미를 가진 3가지 rule을 적으시오. ('__, __, __'의 양식, 영어로 작성)
+Irreflexivity, Trichotomy, Transitivity
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Cloneable Interface는 Object 클래스로부터 상속된 clone이 어떻게 사용되고 재정의되어야 할 지 사용자 클래스가 지정해주기 위해 사용된다.
+true
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+Cloneable Interface를 사용하면 mutable class나 immutable class에 관계없이 항상 privacy leak가 발생하지 않는다.
+false
+아래의 문장을 보고 맞으면 True, 틀리면 False를 쓰시오.
+자바는 여러 클래스를 상속받으면 동일한 메소드 헤딩을 갖게 되어 생길 수 있는 불일치를 방지하기 위해 한 개의 기저 클래스만 가질 수 있다.
+true
